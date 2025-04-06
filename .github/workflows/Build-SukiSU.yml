@@ -241,10 +241,10 @@ jobs:
           if [[ "${{ inputs.CPU }}" == "sm8650" ]]; then
             cp kernel_workspace/kernel_platform/out/msm-kernel-${{ github.event.inputs.CPUD }}-gki/dist/Image ./AnyKernel3/
             cp kernel_workspace/kernel_platform/out/msm-kernel-${{ github.event.inputs.CPUD }}-gki/dist/Image ./kernel_workspace/kernel
-         else
+          else
             cp kernel_workspace/out/dist/Image ./AnyKernel3/
             cp kernel_workspace/out/dist/Image ./kernel_workspace/kernel
-         fi
+          fi
 
          
          
